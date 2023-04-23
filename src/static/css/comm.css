@@ -1,0 +1,11 @@
+.comm-div{
+    width: 100%;
+    height: 140px;
+}
+
+.comm-text{
+    font-weight: 200;
+    font-size: 22px;
+    overflow-wrap: break-word;
+    color: black;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static%}
+    <title>Crossfits &mdash; Colorlib Website Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/modal.css' %}">
+  </head>
+  
+  <body style="background-image: url({% static 'images/bg.jpg' %});">
+
+  <div class="site-wrap">
+
+    
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    
+    
+    <div class="site-navbar-wrap js-site-navbar bg-white">
+      
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo"><a href="{% url 'index' %}"><strong><span class="logo-one-word">Т</span>антрум</strong></a></h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      <li><a href="{% url 'trainers' %}">Тренеры</a></li>
+                      <li><a href="{% url 'events' %}">Новости</a></li>
+                      <li><a href="{% url 'about' %}">О нас</a></li>
+                      <li><a href="{% url 'contact' %}">Контакты</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+ 
+    <div class="site-blocks-cover inner-page" style="background-image: url({% static 'images/hero_b1_1.jpg' %});" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-7 text-center" data-aos="fade">
+          <h1>О Тантруме</h1>
+          <span class="caption d-block text-white">Найди здоровый путь</span>
+        </div>
+      </div>
+    </div>  
+
+     
+
+    
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="mb-5"><img src="{% static 'images/img_1.jpg' %}" alt="Image" id="img-fluid" class="img-fluid"></p>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h2 class="site-section-heading mb-3">О клубе</h2>
+            <p>Добро пожаловать в спортклуб "Тантрум" - место, где ваши тренировки превратятся в настоящий порыв энергии и страсти! Наш спортзал оборудован современным оборудованием для всех видов тренировок - от бодибилдинга и боевых искусств до отжиманий и поднятия тяжестей. Наши профессиональные тренеры помогут вам разработать индивидуальную программу тренировок, которая подойдет именно вам.</p>
+            <p class="mb-4">Но это не все - в "Тантруме" вы найдете дружественную и поддерживающую атмосферу, которая поможет вам достичь новых высот в своем физическом развитии. Присоединяйтесь к нам сегодня и начните свой путь к здоровому и красивому телу!</p>
+            <!-- <p><a href="#" class="btn btn-outline-primary py-2 px-4">Join Our Club</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-image" style="background-image: url({% static 'images/bg_2.jpg' %}); background-attachment: fixed;">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h2 class="site-section-heading text-center text-white">Наша команда</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-center mb-5">
+            <div class="p-3">
+              <img src="{% static 'images/person_1.jpg' %}" alt="Image" class="img-fluid rounded-circle w-25 mb-4">
+              <h2 class="h5 mb-4 text-white">Сергей Остапов</h2>
+              <p class="text-white mb-5 lead">&ldquo;Сергей - персональный тренер по кроссфиту. Ориентирован на развитие всесторонней физической подготовки, включая силу, выносливость и гибкость. Имеет большой опыт работы с людьми разных возрастов и уровней подготовки.&rdquo;</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center mb-5">
+            <div class="p-3">
+              <img src="{% static 'images/person_2.jpg' %}" alt="Image" class="img-fluid rounded-circle w-25 mb-4">
+              <h2 class="h5 mb-4 text-white">Виталий Голубев</h2>
+              <p class="text-white mb-5 lead">&ldquo;Виталий - тренер по фитнесу и йоге со стажем более 5 лет. Специализируется на развитии гибкости, баланса и координации. Проводит занятия как в зале, так и на открытом воздухе, использует различные техники дыхания и медитации.&rdquo;</p>
+
+            </div>
+          </div>
+          <div class="col-md-6 text-center mb-5">
+            <div class="p-3">
+              <img src="{% static 'images/person_3.jpg' %}" alt="Image" class="img-fluid rounded-circle w-25 mb-4">
+              <h2 class="h5 mb-4 text-white">Олеся Новикова</h2>
+              <p class="text-white mb-5 lead">&ldquo;Олеся - персональный тренер по пилатесу. Ориентирована на развитие корпусной мышечной системы, улучшение осанки и общего здоровья. Проводит индивидуальные занятия, учитывая особенности физической подготовки и цели клиента.&rdquo;</p>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 text-center mb-5">
+            <div class="p-3">
+              <img src="{% static 'images/person_4.jpg' %}" alt="Image" class="img-fluid rounded-circle w-25 mb-4">
+              <h2 class="h5 mb-4 text-white">Дмитрий Козлов</h2>
+              <p class="text-white mb-5 lead">&ldquo;Дмитрий - тренер по бодибилдингу с опытом работы более 10 лет, специализируется на развитии мышечной массы и силы. Проводит индивидуальные и групповые занятия, нацелен на достижение максимальных результатов у своих клиентов.&rdquo;</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>  
+    </div>
+    
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <h2 class="site-section-heading text-center">Упражнения для кроссфита</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center mb-4">
+            <div class="border p-4 text-with-icon">
+              <span class="flaticon-weightlifting icon display-4 mb-4 d-block text-primary"></span>
+              <h2 class="h5">Поднятие тяжестей</h2>
+              <p>Поднятие тяжестей имеет множество преимуществ для здоровья.</p>
+              <p><a href="#" class="js-open-modal" data-modal="1">Пoдробнее</a></p>
+            </div>
+          </div>
+
+          <div class="modal" data-modal="1">
+            <svg class="modal__cross js-modal-close" width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#000"></path>
+            </svg>
+            <h1 class="modal-text-header">Поднятие тяжестей</h1>
+            <h1 class="modal-text">Поднятие тяжестей или подтягивание – это упражнение, которое используется для развития силы и выносливости мышц верхней части тела, включая спину, плечи и руки. Это упражнение может выполняться с использованием гантелей, гири, штанги или собственного веса тела.
+              <br>Поднятие тяжестей имеет множество преимуществ для здоровья. Оно помогает укрепить мышцы, повысить выносливость, улучшить осанку, уменьшить риск травм, улучшить координацию и равновесие, а также улучшить общее самочувствие.</h1>
+          </div>
+          <div class="overlay js-overlay-modal"></div>
+
+
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="border p-4 text-with-icon">
+              <span class="flaticon-exercise-1 icon display-4 mb-4 d-block text-primary"></span>
+              <h2 class="h5">Упражнения для ходьбы</h2>
+              <p>Упражнения для ходьбы в спортзале включают использование тренажеров.</p>
+              <p><a href="#" class="js-open-modal" data-modal="2">Пoдробнее</a></p>
+            </div>
+          </div>
+
+          <div class="modal" data-modal="2">
+            <svg class="modal__cross js-modal-close" width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#000"></path>
+            </svg>
+            <h1 class="modal-text-header">Упражнения для ходьбы</h1>
+            <h1 class="modal-text">Упражнения для ходьбы в спортзале включают использование тренажеров для ходьбы на подъеме, беговых дорожек с изменением скорости и наклона, а также ходьбу с гантелями или отягощениями.
+             <br>Эти упражнения помогают укрепить мышцы ног, ягодиц, бедер, плеч и спины, а также улучшить кровообращение и кардио-нагрузку. Рекомендуется следить за своей позицией тела и постепенно повышать интенсивность упражнений по мере укрепления мышц.</h1>
+          </div>
+          <div class="overlay js-overlay-modal"></div>
+
+
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="border p-4 text-with-icon">
+              <span class="flaticon-exercise-2 icon display-4 mb-4 d-block text-primary"></span>
+              <h2 class="h5">Скручивания</h2>
+              <p>Скручивания - упражнение для мышц торса.</p>
+              <p><a href="#" class="js-open-modal" data-modal="3">Пoдробнее</a></p>
+            </div>
+          </div>
+
+          <div class="modal" data-modal="3">
+            <svg class="modal__cross js-modal-close" width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#000"></path>
+            </svg>
+            <h1 class="modal-text-header">Скручивания</h1>
+            <h1 class="modal-text">Скручивания - упражнение для пресса, которое выполняется лежа на спине с поднятыми ногами и руками за головой. Во время выполнения упражнения необходимо поднимать тело, сокращая мышцы пресса, и опускать его обратно на мат.
+             <br>Это упражнение помогает укрепить мышцы пресса, улучшить осанку и координацию движений. Рекомендуется выполнять упражнение с правильной техникой и постепенно повышать количество повторений и нагрузку.</h1>
+          </div>
+          <div class="overlay js-overlay-modal"></div>
+
+
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="border p-4 text-with-icon">
+              <span class="flaticon-weightlifting-1 icon display-4 mb-4 d-block text-primary"></span>
+              <h2 class="h5">Поднятие тяжестей с партнёром</h2>
+              <p>Упражнение, которое выполняется в паре.</p>
+              <p><a href="#" class="js-open-modal" data-modal="4">Пoдробнее</a></p>
+            </div>
+          </div>
+
+          <div class="modal" data-modal="4">
+            <svg class="modal__cross js-modal-close" width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#000"></path>
+            </svg>
+            <h1 class="modal-text-header">Поднятие тяжестей с партнёром</h1>
+            <h1 class="modal-text">Поднятие тяжестей с партнером - это упражнение, которое выполняется в паре и направлено на развитие мышц спины, ног и ягодиц. Один из партнеров держит гантели или штангу, а второй подходит сзади и поднимает тяжелый груз, сгибая ноги и сгибаясь в пояснице. Затем он выпрямляется и возвращает груз на место.
+             <br>Это упражнение помогает укрепить мышцы спины, ног и ягодиц, а также развить координацию движений и силу. Рекомендуется выполнять упражнение с партнером, который может контролировать технику выполнения и помогать при необходимости.</h1>
+          </div>
+          <div class="overlay js-overlay-modal"></div>
+
+
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="border p-4 text-with-icon">
+              <span class="flaticon-exercise-3 icon display-4 mb-4 d-block text-primary"></span>
+              <h2 class="h5">Перекатывания</h2>
+              <p>Перекатывания предназначены для укрепления мышц пресса и гибкости тела.</p>
+              <p><a href="#" class="js-open-modal" data-modal="5">Пoдробнее</a></p>
+            </div>
+          </div>
+
+          <div class="modal" data-modal="5">
+            <svg class="modal__cross js-modal-close" width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#000"></path>
+            </svg>
+            <h1 class="modal-text-header">Перекатывания</h1>
+            <h1 class="modal-text">Перекатывания - это упражнение для укрепления мышц пресса, которое выполняется лежа на спине с поднятыми ногами и руками вдоль тела. Во время выполнения упражнения необходимо перекатывать тело вправо и влево, сокращая мышцы пресса, и возвращаться в исходное положение.
+             <br>Это упражнение помогает укрепить мышцы пресса, улучшить координацию движений и гибкость тела. Рекомендуется выполнять упражнение с правильной техникой и постепенно повышать количество повторений и нагрузку.</h1>
+          </div>
+          <div class="overlay js-overlay-modal"></div>
+
+
+
+          <div class="col-md-4 text-center mb-4">
+            <div class="border p-4 text-with-icon">
+              <span class="flaticon-exercise icon display-4 mb-4 d-block text-primary"></span>
+              <h2 class="h5">Выпады</h2>
+              <p>Идеально для укрепления мышц ног, ягодиц и бедер, улучшения баланса и координации движений.</p>
+              <p><a href="#" class="js-open-modal" data-modal="6">Пoдробнее</a></p>
+            </div>
+          </div>
+
+          <div class="modal" data-modal="6">
+            <svg class="modal__cross js-modal-close" width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#000"></path>
+            </svg>
+            <h1 class="modal-text-header">Выпады</h1>
+            <h1 class="modal-text">Выпады - это упражнение для развития мышц ног, ягодиц и бедер, которое выполняется стоя на одной ноге с другой вытянутой назад. Во время выполнения упражнения необходимо опускаться вниз, сгибая ногу в коленном суставе, и возвращаться в исходное положение. После нескольких повторений необходимо сменить ногу и повторить упражнение.
+             <br>Это упражнение помогает укрепить мышцы ног, ягодиц и бедер, улучшить баланс и координацию движений. Рекомендуется выполнять упражнение с правильной техникой и постепенно повышать количество повторений и нагрузку.</h1>
+          </div>
+          <div class="overlay js-overlay-modal"></div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <footer class="site-footer">
+      <div class="container">
+        
+
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="footer-heading mb-4 text-white">о нас</h3>
+            <p>Добро пожаловать в спортклуб "Тантрум"</p>
+            <p><a href="{% url 'about' %}" class="btn btn-primary rounded text-white px-4">Читать больше</a></p>
+          </div>
+          <div class="col-md-5 ml-auto">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="footer-heading mb-4 text-white">Быстрый доступ</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="{% url 'trainers' %}">Тренеры</a></li>
+                    <li><a href="{% url 'events' %}">Новости</a></li>
+                    <li><a href="{% url 'contact' %}">Контакты</a></li>
+                    <li><a href="{% url 'about' %}">О клубе</a></li>
+                    <li><a href="{% url 'contact' %}">Конфиденциальность</a></li>
+                  </ul>
+              </div>
+              <!-- <div class="col-md-6">
+                <h3 class="footer-heading mb-4 text-white">Program</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Body Building</a></li>
+                    <li><a href="#">Morning Energy</a></li>
+                    <li><a href="#">Stretching</a></li>
+                    <li><a href="#">Weight Lifting</a></li>
+                  </ul>
+              </div> -->
+            </div>
+          </div>
+
+          
+          <div class="col-md-2">
+            <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Соц. сети</h3></div>
+              <div class="col-md-12">
+                <p>
+                  <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                  <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                  <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                  <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <!-- <div class="col-md-12">
+            <p>
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            </p>
+          </div> -->
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+
+  <script src="{% static 'js/modal.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
